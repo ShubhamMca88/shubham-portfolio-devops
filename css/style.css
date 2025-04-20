@@ -115,7 +115,7 @@ h6 { font-size: 16px; }
 	clear: both;
 	float: left;
 }
-#preloader {
+/* #preloader {
     position: fixed;
     left: 0;
     top: 0;
@@ -151,7 +151,7 @@ h6 { font-size: 16px; }
     -webkit-transition: all 0.8s ease 0s;
     -o-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
-}
+} */
 .loader_line:before{
     content: '';
     position: absolute;
@@ -169,21 +169,21 @@ h6 { font-size: 16px; }
     animation: lineheight 1000ms ease-in-out 0s forwards;
 }
 .loader_line:after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1px;
-    height: 100%;
-    background-color: #C8C8C8;
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    -o-transform: translateY(-100%);
-    transform: translateY(-100%);
-    -webkit-animation: lineround 1200ms linear 0s infinite;
-    -o-animation: lineround 1200ms linear 0s infinite;
-    animation: lineround 1200ms linear 0s infinite;
-    animation-delay: 2000ms;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1px;
+	height: 100%;
+	background-color: #C8C8C8;
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-animation: lineround 600ms linear 0s infinite;
+	-o-animation: lineround 600ms linear 0s infinite;
+	animation: lineround 600ms linear 0s infinite;
+	animation-delay: 1000ms;
 }
 
 @keyframes lineheight{
@@ -210,56 +210,56 @@ h6 { font-size: 16px; }
     }
 }
 
-/*hiding all*/
+/*hiding all with faster animation*/
 .preloaded .loader_line:after{
-    opacity: 0;
+	opacity: 0;
 }
-.preloaded  .loader_line{
-    opacity: 0;
-    height: 100%!important;
+.preloaded .loader_line{
+	opacity: 0;
+	height: 100%!important;
 }
 .preloaded:before,
 .preloaded:after{
-    -webkit-animation: preloadedzero 300ms ease-in-out 500ms forwards;
-    -o-animation: preloadedzero 300ms ease-in-out 500ms forwards;
-    animation: preloadedzero 300ms ease-in-out 500ms forwards;
+	-webkit-animation: preloadedzero 150ms ease-in-out 250ms forwards;
+	-o-animation: preloadedzero 150ms ease-in-out 250ms forwards;
+	animation: preloadedzero 150ms ease-in-out 250ms forwards;
 }
 @keyframes preloadedzero{
-    0%{
-        width: 50%;
-    }
-    100%{
-        width: 0%;
-    }
+	0%{
+		width: 50%;
+	}
+	100%{
+		width: 0%;
+	}
 }
 
 /*---------------------------------------------------*/
 /*	02) GRAX TOPBAR
 /*---------------------------------------------------*/
 
-.grax_tm_topbar{
+.grax_tm_topbar {
 	left: 0px;
 	right: 0px;
 	position: fixed;
 	z-index: 10;
 	padding: 30px 0px;
-	transform: translateY(-101%);
+	/* transform: translateY(-100%); */
 	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+	-webkit-transition: all .1s ease;
+	   -moz-transition: all .1s ease;
+		-ms-transition: all .1s ease;
+		 -o-transition: all .1s ease;
+			transition: all .1s ease;
 }
-.grax_tm_topbar.opened{
+.grax_tm_topbar.opened {
 	transform: translateY(0);
 }
-.grax_tm_topbar.animate{
+.grax_tm_topbar.animate {
 	background-color: #fff;
 	padding: 25px 0px;
-	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
 }
-.grax_tm_topbar .topbar_inner{
+.grax_tm_topbar .topbar_inner {
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -267,30 +267,48 @@ h6 { font-size: 16px; }
 	align-items: center;
 	justify-content: space-between;
 }
-.grax_tm_topbar .logo .dark{display: none;}
-.grax_tm_topbar.animate .logo .dark{display: block;}
-.grax_tm_topbar.animate .logo .light{display: none;}
-.grax_tm_topbar .logo img{max-width: 100px;}
-.grax_tm_topbar .logo a{display: inline-block;}
-.grax_tm_topbar .menu ul{
+.grax_tm_topbar .logo .dark {
+	display: none;
+}
+.grax_tm_topbar.animate .logo .dark {
+	display: block;
+}
+.grax_tm_topbar.animate .logo .light {
+	display: none;
+}
+.grax_tm_topbar .logo img {
+	max-width: 100px;
+}
+.grax_tm_topbar .logo a {
+	display: inline-block;
+}
+.grax_tm_topbar .menu ul {
 	margin: 0px;
 	list-style-type: none;
 }
-.grax_tm_topbar .menu ul li{
+.grax_tm_topbar .menu ul li {
 	margin: 0px 30px 0px 0px;
 	display: inline-block;
 }
-.grax_tm_topbar .menu ul li:last-child{margin-right: 0px;}
-.grax_tm_topbar .menu ul li a{
+.grax_tm_topbar .menu ul li:last-child {
+	margin-right: 0px;
+}
+.grax_tm_topbar .menu ul li a {
 	text-decoration: none;
 	color: #fff;
 	font-family: "Poppins";
 	font-weight: 500;
-	transition: all .3s ease;
+	transition: all .01s ease;
 }
-.grax_tm_topbar .menu ul li.current a{color: #e54b4b;}
-.grax_tm_topbar .menu ul li a:hover{color: #e54b4b;}
-.grax_tm_topbar.animate .menu ul li a{color: #000;}
+.grax_tm_topbar .menu ul li.current a {
+	color: #e54b4b;
+}
+.grax_tm_topbar .menu ul li a:hover {
+	color: #e54b4b;
+}
+.grax_tm_topbar.animate .menu ul li a {
+	color: #000;
+}
 
 /*---------------------------------------------------*/
 /*	03) GRAX MOBILE MENU
@@ -328,7 +346,7 @@ h6 { font-size: 16px; }
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
-    transition-duration: 0.15s;
+    transition-duration: 0.10s;
     transition-timing-function: linear;
     font: inherit;
     color: inherit;
@@ -355,7 +373,7 @@ h6 { font-size: 16px; }
     background-color: #333333;
     position: absolute;
     transition-property: transform;
-    transition-duration: 0.15s;
+    transition-duration: 0.10s;
     transition-timing-function: ease;
 	
 	-webkit-border-radius: 4px;
@@ -411,11 +429,11 @@ h6 { font-size: 16px; }
 	background-color: #000;
 	width: 30px;
 	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 .grax_tm_mobile_menu .dropdown{
 	width: 100%;
@@ -465,11 +483,11 @@ h6 { font-size: 16px; }
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%, 0 100%);
 	overflow: hidden;
 	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 .grax_tm_hero.creative{clip-path: none;}
 .grax_tm_hero.creative.shape{clip-path:none;}
@@ -548,22 +566,22 @@ h6 { font-size: 16px; }
 	visibility: hidden;
 	transform: translateZ(0);
 	
-	-webkit-transition: all .5s ease;
-	   -moz-transition: all .5s ease;
-	    -ms-transition: all .5s ease;
-	     -o-transition: all .5s ease;
-	        transition: all .5s ease;
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 .fn_animation .character.opened{
 	opacity: 1;
 	visibility: visible;
 }
 .fn_animation.job .character{
-	-webkit-transition: all .4s ease;
-	   -moz-transition: all .4s ease;
-	    -ms-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	        transition: all .4s ease;
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
 }
 .grax_tm_hero .job{
 	color: #ddd;
@@ -600,7 +618,7 @@ h6 { font-size: 16px; }
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     visibility: visible;
 	
-    -webkit-transition: all .7s;
+    -webkit-transition: all .3s;
     -moz-transition: all .7s;
     -ms-transition: all .7s;
     -o-transition: all .7s;
