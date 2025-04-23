@@ -620,7 +620,7 @@
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">📂 AWS S3 Bucket Terraform</a>
+                      <a href="#">🪣 Deploying a Static Website on AWS S3 Using Terraform for Infrastructure as Code</a>
                     </h3>
                   </div>
                   <div class="description">
@@ -684,7 +684,7 @@
                   </div>
                   <div class="details">
                     <h3 class="title">
-                      <a href="#">⚙️ AWS Amplify Terraform</a>
+                      <a href="#">🚀 Deploy an AWS Amplify App with Terraform for Scalable Infrastructure Management</a>
                     </h3>
                   </div>
                   <div class="description">
@@ -719,25 +719,26 @@
           </div>
           </blockquote>
           <p>
-            <p>Usage:</p>
-            <ul>
-              <li>Clone the repository:</li>
-              <pre>git clone https://github.com/YourUsername/aws-amplify-terraform-project.git</pre>
-              <pre>cd aws-amplify-terraform-project</pre>
-              <li>Initialize Terraform:</li>
-              <pre>terraform init</pre>
-              <li>Plan the deployment:</li>
-              <pre>terraform plan</pre>
-              <li>Apply the configuration:</li>
-              <pre>terraform apply</pre>
-            </ul>
+          <p>Usage:</p>
+          <ul>
+            <li>Clone the repository:</li>
+            <pre>git clone https://github.com/YourUsername/aws-amplify-terraform-project.git</pre>
+            <pre>cd aws-amplify-terraform-project</pre>
+            <li>Initialize Terraform:</li>
+            <pre>terraform init</pre>
+            <li>Plan the deployment:</li>
+            <pre>terraform plan</pre>
+            <li>Apply the configuration:</li>
+            <pre>terraform apply</pre>
+          </ul>
           </p>
           <br>
           <div class="share">
             <span>Projact GitHub Link:</span>
             <ul class="social">
               <li>
-                <a href="https://github.com/YourUsername/aws-amplify-terraform-project.git"><img class="svg" src="img/svg/social/github.svg" alt="" /></a>
+                <a href="https://github.com/YourUsername/aws-amplify-terraform-project.git"><img class="svg"
+                    src="img/svg/social/github.svg" alt="" /></a>
               </li>
             </ul>
           </div>
@@ -748,39 +749,177 @@
         <div class="list_inner">
           <div class="image">
             <img src="img/placeholders/4-3.jpg" alt="" />
-            <div class="main" data-img-url="img/projects/What-is-Serverless-Computing-1.png"></div>
+            <div class="main" data-img-url="img/projects/docker.png"></div>
             <a class="grax_tm_full_link" href="#"></a>
           </div>
           <div class="details">
             <h3 class="title">
-              <a href="#">Serverless Architecture Deployment</a>
+              <a href="#">📦 Deploying a Dockerized Jenkins App on AWS EC2 with Terraform , CI/CD</a>
             </h3>
           </div>
           <div class="description">
             <p>
-              use serverless architecture with AWS and Terraform to
-              deploy applications without managing servers. AWS
-              provides tools like Lambda, API Gateway, and DynamoDB to
-              help you build serverless apps. Lambda lets you run code
-              automatically in response to events, API Gateway helps
-              expose your app through APIs, and DynamoDB is a database
-              to store your data—all without worrying about servers.
+              This project showcases the deployment of a Django web application on an AWS EC2 instance, utilizing Docker
+              for containerization and Jenkins for continuous integration and deployment (CI/CD). The workflow ensures
+              automated, consistent, and scalable deployments.
             </p>
+            <p>Key Components:</p>
+            <ul>
+              <li>
+                <strong>Docker:</strong> Containerizes the Django application, ensuring consistency across development
+                and production environments.
+              </li>
+              <li>
+                <strong>Jenkins:</strong> Automates the build, test, and deployment processes, integrating seamlessly
+                with GitHub for source code management.
+              </li>
+              <li>
+                <strong>AWS EC2:</strong> Hosts the Dockerized Django application, providing a scalable and secure
+                environment.
+              </li>
+            </ul>
+            <p>Workflow Overview:</p>
             <blockquote>
-              Terraform helps automate the setup of these AWS
-              services. You can write simple code to define the
-              resources you need, like Lambda functions, API Gateway,
-              and DynamoDB tables. Then, with a single command,
-              Terraform will create everything for you, ensuring it's
-              set up properly every time.
+              <ul>
+                <li>Code Integration: Developers push code changes to a GitHub repository.​</li>
+                <li>CI/CD Pipeline: Jenkins detects changes and initiates the pipeline:</li>
+                <ul>
+                  <li>Builds the Docker image of the Django application.</li>
+                  <li>Pushes the image to Docker Hub.</li>
+                  <li>Deploys the containerized application to the AWS EC2 instance.​</li>
+                </ul>
+                <li>Deployment: The EC2 instance pulls the latest Docker image and runs the container, making the Django
+                  application accessible via the public IP.</li>
+              </ul>
             </blockquote>
+            Usage Instructions:
             <p>
-              Using AWS and Terraform together makes it easier to
-              build and manage your app’s infrastructure. Serverless
-              is perfect for apps with changing usage, and Terraform
-              ensures the setup is automatic and consistent. This way,
-              you can focus more on writing your app and less on
-              managing servers.
+              Clone the Repository:
+            </p>
+            <pre>
+              <code>
+                git clone https://github.com/yourusername/django-ec2-docker-jenkins.git
+                cd django-ec2-docker-jenkins
+              </code>
+            </pre>
+            <p>
+              Configure Jenkins:
+            </p>
+            <ul>
+              <li>Set up Jenkins on your local machine or server.​</li>
+              <li>Install necessary plugins (e.g., Docker, GitHub Integration).​</li>
+              <li>Create a new Jenkins pipeline job and link it to your GitHub repository.​</li>
+            </ul>
+            <p>
+              Set Up AWS EC2 Instance:
+            </p>
+            <ul>
+              <li>Launch an EC2 instance with Docker installed.​</li>
+              <li>Ensure security groups allow SSH (port 22) and HTTP (port 80) access.​</li>
+            </ul>
+            <p>
+              Run the Pipeline:
+            </p>
+            <ul>
+              <li>Trigger the Jenkins pipeline manually or set up webhook triggers for automatic deployment on code
+                push.​</li>
+            </ul>
+            <p>
+              Access the Application:
+            </p>
+            <p>
+              Navigate to the EC2 instance's public IP to view the deployed Django application.​
+            </p>
+            <div class="share">
+              <span>github:</span>
+              <ul class="social">
+                <li>
+                  <a href="https://github.com/ShubhamMca88"><img class="svg" src="img/svg/social/github.svg"
+                      alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
+        <div class="list_inner">
+          <div class="image">
+            <img src="img/placeholders/4-3.jpg" alt="" />
+            <div class="main" data-img-url="img/projects/cicd.png"></div>
+            <a class="grax_tm_full_link" href="#"></a>
+          </div>
+          <div class="details">
+            <h3 class="title">
+              <a href="#">🔄 CI/CD Pipeline with GitHub Actions and Jenkins for Automated Software Delivery</a>
+            </h3>
+          </div>
+          <div class="description">
+            <p>
+              <b>Project Description:</b>
+            <p>
+              This project showcases the implementation of Continuous Integration and Continuous Deployment (CI/CD)
+              pipelines using both GitHub Actions and Jenkins, two prominent tools in the DevOps ecosystem. The
+              objective is to automate the software development lifecycle, ensuring rapid and reliable delivery of
+              applications.
+            </p>
+
+            <b>Key Features:</b>
+            <ul>
+              <li>
+                <strong>GitHub Actions Workflow:</strong> Automates the process of building, testing, and deploying
+                applications directly
+                from the GitHub repository. Utilizes YAML configuration files to define workflows triggered by events
+                such
+                as code pushes or pull requests.
+              </li>
+              <li>
+                <strong>Jenkins Pipeline:</strong> Establishes a scripted pipeline that integrates with version control
+                systems to
+                automatically build, test, and deploy applications. Employs Jenkinsfiles to define the stages and steps
+                of
+                the pipeline.
+              </li>
+              <li>
+                <strong>Automation of Testing and Deployment:</strong> Both pipelines incorporate automated testing to
+                ensure code quality
+                and facilitate seamless deployment to production environments.
+              </li>
+              <li>
+                <strong>Scalability and Flexibility:</strong> The use of these tools allows for scalable solutions that
+                can adapt to
+                various project requirements and team sizes.
+              </li>
+            </ul>
+
+            <b>Skills Demonstrated:</b>
+            <ul>
+              <li>Proficiency in setting up and configuring CI/CD pipelines using GitHub Actions and Jenkins.</li>
+              <li>Expertise in writing and managing YAML and Jenkinsfile configurations.</li>
+              <li>Ability to integrate automated testing frameworks into the deployment process.</li>
+              <li>Understanding of event-driven automation and workflow orchestration.</li>
+            </ul>
+
+            <b>Usage Instructions:</b>
+            <ul>
+              <li>
+                <strong>GitHub Actions:</strong>
+                <ul>
+                  <li>Create a <code>.github/workflows/ci-cd.yml</code> file in your repository.</li>
+                  <li>Define the workflow steps, including build, test, and deploy stages.</li>
+                  <li>Push the configuration to trigger the workflow on specified events.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Jenkins:</strong>
+                <ul>
+                  <li>Install Jenkins and necessary plugins on your server.</li>
+                  <li>Create a new pipeline job and link it to your version control system.</li>
+                  <li>Write a Jenkinsfile defining the stages of your pipeline.</li>
+                  <li>Run the pipeline to automate the build, test, and deployment processes.</li>
+                </ul>
+              </li>
+            </ul>
             </p>
             <div class="share">
               <span>Share:</span>
@@ -797,39 +936,64 @@
         <div class="list_inner">
           <div class="image">
             <img src="img/placeholders/4-3.jpg" alt="" />
-            <div class="main" data-img-url="img/projects/What-is-Serverless-Computing-1.png"></div>
+            <div class="main" data-img-url="img/projects/serv.png"></div>
             <a class="grax_tm_full_link" href="#"></a>
           </div>
           <div class="details">
             <h3 class="title">
-              <a href="#">Serverless Architecture Deployment</a>
+              <a href="#">☁️ Serverless Application Deployment with AWS Lambda, API Gateway, and DynamoDB</a>
             </h3>
           </div>
           <div class="description">
             <p>
-              use serverless architecture with AWS and Terraform to
-              deploy applications without managing servers. AWS
-              provides tools like Lambda, API Gateway, and DynamoDB to
-              help you build serverless apps. Lambda lets you run code
-              automatically in response to events, API Gateway helps
-              expose your app through APIs, and DynamoDB is a database
-              to store your data—all without worrying about servers.
-            </p>
-            <blockquote>
-              Terraform helps automate the setup of these AWS
-              services. You can write simple code to define the
-              resources you need, like Lambda functions, API Gateway,
-              and DynamoDB tables. Then, with a single command,
-              Terraform will create everything for you, ensuring it's
-              set up properly every time.
-            </blockquote>
+            <p>Project Description:</p>
             <p>
-              Using AWS and Terraform together makes it easier to
-              build and manage your app’s infrastructure. Serverless
-              is perfect for apps with changing usage, and Terraform
-              ensures the setup is automatic and consistent. This way,
-              you can focus more on writing your app and less on
-              managing servers.
+              This project demonstrates the deployment of a fully serverless application using AWS Lambda, API Gateway,
+              and Amazon DynamoDB, orchestrated through Terraform. The architecture ensures scalability,
+              cost-effectiveness, and ease of maintenance.
+            </p>
+            <p>Key Components:</p>
+            <ul>
+              <li><strong>AWS Lambda:</strong> Handles the backend logic, executing code in response to HTTP requests
+                without the need for server management.</li>
+              <li><strong>API Gateway:</strong> Acts as the entry point for client requests, routing them to the
+                appropriate Lambda functions.</li>
+              <li><strong>Amazon DynamoDB:</strong> Provides a fast and flexible NoSQL database for storing and
+                retrieving application data.</li>
+              <li><strong>Terraform:</strong> Manages the infrastructure as code, allowing for consistent and repeatable
+                deployments.</li>
+            </ul>
+            <p>Features:</p>
+            <ul>
+              <li>Implementation of CRUD operations (Create, Read, Update, Delete) via RESTful API endpoints.</li>
+              <li>Stateless architecture ensuring high availability and scalability.</li>
+              <li>Secure access control using IAM roles and policies.</li>
+              <li>Automated deployment and resource management with Terraform.</li>
+            </ul>
+            <p>Skills Demonstrated:</p>
+            <ul>
+              <li>Proficiency in serverless architecture design and deployment.</li>
+              <li>Expertise in AWS services integration and management.</li>
+              <li>Infrastructure as Code (IaC) using Terraform.</li>
+              <li>API development and management with API Gateway.</li>
+            </ul>
+            <p>Usage Instructions:</p>
+            <ol>
+              <li>Clone the Repository:</li>
+              <pre><code>git clone https://github.com/yourusername/serverless-app-terraform.git
+        cd serverless-app-terraform</code></pre>
+              <li>Initialize Terraform:</li>
+              <pre><code>terraform init</code></pre>
+              <li>Plan the Deployment:</li>
+              <pre><code>terraform plan</code></pre>
+              <li>Apply the Configuration:</li>
+              <pre><code>terraform apply</code></pre>
+              <li>Test the API Endpoints:</li>
+              <p>Use tools like curl or Postman to send HTTP requests to the API Gateway endpoint and verify the
+                responses.</p>
+              <li>Cleanup Resources:</li>
+              <pre><code>terraform destroy</code></pre>
+            </ol>
             </p>
             <div class="share">
               <span>Share:</span>
@@ -846,88 +1010,69 @@
         <div class="list_inner">
           <div class="image">
             <img src="img/placeholders/4-3.jpg" alt="" />
-            <div class="main" data-img-url="img/projects/What-is-Serverless-Computing-1.png"></div>
+            <div class="main" data-img-url="img/projects/k8s.png"></div>
             <a class="grax_tm_full_link" href="#"></a>
           </div>
           <div class="details">
             <h3 class="title">
-              <a href="#">Serverless Architecture Deployment</a>
+              <a href="#">🧩 Microservice Deployment on Kubernetes Using Minikube, kubectl, YAML, and Helm</a>
             </h3>
           </div>
           <div class="description">
             <p>
-              use serverless architecture with AWS and Terraform to
-              deploy applications without managing servers. AWS
-              provides tools like Lambda, API Gateway, and DynamoDB to
-              help you build serverless apps. Lambda lets you run code
-              automatically in response to events, API Gateway helps
-              expose your app through APIs, and DynamoDB is a database
-              to store your data—all without worrying about servers.
-            </p>
-            <blockquote>
-              Terraform helps automate the setup of these AWS
-              services. You can write simple code to define the
-              resources you need, like Lambda functions, API Gateway,
-              and DynamoDB tables. Then, with a single command,
-              Terraform will create everything for you, ensuring it's
-              set up properly every time.
-            </blockquote>
-            <p>
-              Using AWS and Terraform together makes it easier to
-              build and manage your app’s infrastructure. Serverless
-              is perfect for apps with changing usage, and Terraform
-              ensures the setup is automatic and consistent. This way,
-              you can focus more on writing your app and less on
-              managing servers.
-            </p>
-            <div class="share">
-              <span>Share:</span>
-              <ul class="social">
-                <li>
-                  <a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
-        <div class="list_inner">
-          <div class="image">
-            <img src="img/placeholders/4-3.jpg" alt="" />
-            <div class="main" data-img-url="img/projects/What-is-Serverless-Computing-1.png"></div>
-            <a class="grax_tm_full_link" href="#"></a>
-          </div>
-          <div class="details">
-            <h3 class="title">
-              <a href="#">Serverless Architecture Deployment</a>
-            </h3>
-          </div>
-          <div class="description">
-            <p>
-              use serverless architecture with AWS and Terraform to
-              deploy applications without managing servers. AWS
-              provides tools like Lambda, API Gateway, and DynamoDB to
-              help you build serverless apps. Lambda lets you run code
-              automatically in response to events, API Gateway helps
-              expose your app through APIs, and DynamoDB is a database
-              to store your data—all without worrying about servers.
-            </p>
-            <blockquote>
-              Terraform helps automate the setup of these AWS
-              services. You can write simple code to define the
-              resources you need, like Lambda functions, API Gateway,
-              and DynamoDB tables. Then, with a single command,
-              Terraform will create everything for you, ensuring it's
-              set up properly every time.
-            </blockquote>
-            <p>
-              Using AWS and Terraform together makes it easier to
-              build and manage your app’s infrastructure. Serverless
-              is perfect for apps with changing usage, and Terraform
-              ensures the setup is automatic and consistent. This way,
-              you can focus more on writing your app and less on
-              managing servers.
+                <p>Project Description:</p>
+                <p>
+                This project demonstrates the deployment of a simple microservice within a local Kubernetes cluster using
+                Minikube. The deployment process utilizes kubectl commands, YAML manifests, and Helm charts to manage
+                Kubernetes resources effectively.​
+                </p>
+                <p>Key Components:</p>
+                <ul>
+                <li><strong>Minikube:</strong> Provides a local Kubernetes environment for testing and development purposes.​</li>
+                <li><strong>kubectl:</strong> The command-line tool used to interact with the Kubernetes cluster, facilitating the management
+                  of cluster resources.​</li>
+                <li><strong>YAML Manifests:</strong> Define the desired state of Kubernetes resources such as Deployments and Services.​</li>
+                <li><strong>Helm:</strong> A package manager for Kubernetes that simplifies the deployment and management of applications
+                  through reusable charts.​</li>
+                </ul>
+                <p>Deployment Workflow:</p>
+                <ol>
+                <li><strong>Set Up Minikube:</strong></li>
+                <ul>
+                  <li>Install Minikube on your local machine.</li>
+                  <li>Start the Minikube cluster:</li>
+                  <pre><code>minikube start</code></pre>
+                </ul>
+                <li><strong>Deploy Microservice Using YAML:</strong></li>
+                <ul>
+                  <li>Create a <code>deployment.yaml</code> file defining the Deployment resource.</li>
+                  <li>Create a <code>service.yaml</code> file defining the Service resource.</li>
+                  <li>Apply the configurations:</li>
+                  <pre><code>
+        kubectl apply -f deployment.yaml
+        kubectl apply -f service.yaml
+                  </code></pre>
+                </ul>
+                <li><strong>Access the Microservice:</strong></li>
+                <ul>
+                  <li>Retrieve the URL to access the service:</li>
+                  <pre><code>minikube service your-service-name --url</code></pre>
+                </ul>
+                <li><strong>Deploy Using Helm:</strong></li>
+                <ul>
+                  <li>Create a Helm chart for the microservice.</li>
+                  <li>Install the Helm chart:</li>
+                  <pre><code>helm install your-release-name ./your-chart-directory</code></pre>
+                </ul>
+                </ol>
+                <p>Skills Demonstrated:</p>
+                <ul>
+                <li>Proficiency in setting up and managing a local Kubernetes cluster using Minikube.​</li>
+                <li>Ability to define and apply Kubernetes resources using YAML manifests.​</li>
+                <li>Experience with Helm for packaging and deploying applications on Kubernetes.​</li>
+                <li>Familiarity with kubectl for cluster interaction and resource management.​</li>
+                </ul>
+
             </p>
             <div class="share">
               <span>Share:</span>
